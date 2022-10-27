@@ -1,10 +1,6 @@
 {
 	"name": "vcontact",
 	"homepage": "https://github.com/moodrets/vcontact",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/moodrets/vcontact.git"
-	},
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {

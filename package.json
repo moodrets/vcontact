@@ -12,7 +12,8 @@
 		"build": "vue-tsc --noEmit && vite build --outDir docs",
 		"preview": "vite preview",
 		"predeploy": "vue-tsc --noEmit && vite build --outDir docs",
-		"deploy": "gh-pages -d docs"
+		"deploy": "gh-pages -d docs",
+		"sh-deploy": "sh deploy.sh"
 	},
 	"dependencies": {
 		"gh-pages": "^4.0.0",

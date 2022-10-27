@@ -1,14 +1,21 @@
 {
 	"name": "vcontact",
 	"homepage": "https://github.com/moodrets/vcontact",
-	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/moodrets/vcontact.git"
+	},
+	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc --noEmit && vite build --outDir docs",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"predeploy": "vue-tsc --noEmit && vite build --outDir docs",
+		"deploy": "gh-pages -d docs"
 	},
 	"dependencies": {
+		"gh-pages": "^4.0.0",
 		"sass": "^1.55.0",
 		"vue": "^3.2.37",
 		"vue-router": "^4.1.6"

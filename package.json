@@ -1,6 +1,6 @@
 {
 	"name": "vcontact",
-	"private": true,
+	"homepage": "https://github.com/moodrets/vcontact",
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {

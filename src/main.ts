@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import './style.css'
+import { createApp, h } from 'vue'
+import './style.scss'
 import App from './App.vue'
+import router from './router'
 
-createApp(App).mount('#app')
+const app = createApp({
+	render: () => h(App),
+})
+
+app.use(router).mount('#app')

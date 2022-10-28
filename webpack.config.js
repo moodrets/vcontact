@@ -15,7 +15,7 @@ module.exports = {
 	context: path.resolve(__dirname),
 	entry: { app: `./src/main.ts` },
 	output: {
-		path: path.resolve(__dirname, 'docs'),
+		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[hash].js',
 		clean: true,
 		publicPath: '/',

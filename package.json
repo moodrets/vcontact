@@ -1,6 +1,6 @@
 {
 	"name": "vcontact",
-	"homepage": "https://github.com/moodrets/vcontact",
+	"homepage": "https://moodrets.github.io/vcontact/",
 	"version": "0.0.1",
 	"scripts": {
 		"app:serve": "webpack serve --mode development",

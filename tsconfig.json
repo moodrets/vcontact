@@ -1,18 +1,31 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"module": "ESNext",
-		"moduleResolution": "Node",
-		"strict": true,
-		"jsx": "preserve",
-		"sourceMap": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"esModuleInterop": true,
-		"lib": ["ESNext", "DOM"],
-		"skipLibCheck": true
-	},
-	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+    "include": ["src/**/*.ts", "src/**/*.vue"],
+    "exclude": ["node_modules", "./dist/**/*"],
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "outDir": "./dist/build",
+        "paths": {
+            "~/*": ["src/*"]
+        },
+        "typeRoots": ["./node_modules/@types", "./node_modules/vuetify/types"],
+        "lib": ["es2017", "dom"],
+        "declaration": false,
+        "target": "es6",
+        "module": "esnext",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": false,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "pretty": true,
+        "sourceMap": true,
+        "strict": true,
+        "moduleResolution": "node"
+    }
 }

@@ -6,7 +6,7 @@
 		"app:serve": "webpack serve --mode development",
 		"app:watch": "webpack --mode development --watch",
 		"app:build": "webpack --mode production",
-		"predeploy": "webpack --mode production",
+		"predeploy": "webpack --mode production && gh-pages-clean",
 		"deploy": "gh-pages -d dist"
 	},
 	"devDependencies": {

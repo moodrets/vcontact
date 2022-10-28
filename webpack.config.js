@@ -18,7 +18,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: '[name].[hash].js',
 		clean: true,
-		publicPath: '/',
+		publicPath: '/vcontact/',
 	},
 	resolve: {
 		extensions: ['*', '.js', '.ts', '.vue', 'scss', 'css'],

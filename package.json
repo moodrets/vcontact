@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc --noEmit && vite build --outDir docs",
+		"build": "vue-tsc --noEmit && vite build --outDir docs --base=/vcontact/",
 		"preview": "vite preview --outDir docs",
 		"predeploy": "vue-tsc --noEmit && vite build --base=/vcontact/ --outDir docs && gh-pages-clean",
 		"deploy": "gh-pages -d docs"

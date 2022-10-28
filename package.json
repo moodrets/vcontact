@@ -5,10 +5,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc --noEmit && vite build",
-		"preview": "vite preview",
-		"predeploy": "vue-tsc --noEmit && vite build --base=/vcontact/ && gh-pages-clean",
-		"deploy": "gh-pages -d dist"
+		"build": "vue-tsc --noEmit && vite build --outDir docs",
+		"preview": "vite preview --outDir docs",
+		"predeploy": "vue-tsc --noEmit && vite build --base=/vcontact/ --outDir docs && gh-pages-clean",
+		"deploy": "gh-pages -d docs"
 	},
 	"dependencies": {
 		"gh-pages": "^4.0.0",
